@@ -5,7 +5,7 @@
 
 > bulma framework [go bulma](https://bulma.io/)
 
-> partitles.js [go partitles](https://vincentgarreau.com/particles.js/)
+> particles.js [go particles](https://vincentgarreau.com/particles.js/)
 
 
 
