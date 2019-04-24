@@ -55,6 +55,10 @@ input[type]:focus {
     color: whitesmoke;
 }
 
+.nav-menu {
+    background-color: #0c0f0f;
+}
+
 a.nav-item.is-tab.is-active {
     border-bottom-color: #209ce4;
     border-width: 2px;
