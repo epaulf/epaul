@@ -59,6 +59,14 @@ input[type]:focus {
     background-color: #0c0f0f;
 }
 
+.nav-toggle span {
+    background-color: #209ce4;
+}
+
+.nav-toggle.is-active {
+    background-color: black;
+}
+
 a.nav-item.is-tab.is-active {
     border-bottom-color: #209ce4;
     border-width: 2px;
@@ -230,12 +238,3 @@ a.nav-item:hover {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
-
-/*.particles-js {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0
-  }*/
