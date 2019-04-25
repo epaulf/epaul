@@ -1,167 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Ep Developer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/bulma.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<title>Ep Developer</title>
-	<meta charset="utf-8" />
-	<!-- stylesheets -->
-	<link rel="stylesheet" href="css/bulma.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-</head>
+  <body>
+    <!-- navigation -->
+    <div class="navigation">
+      <nav class="nav has-shadow">
+        <div class="container">
+          <!-- nav site title -->
+          <div class="nav-left">
+            <a class="nav-item">
+              <h3 class="title is-3" style="color: white;">
+                ERIC PAUL DEVELOPER
+              </h3>
+            </a>
+          </div>
+          <!-- end of site title -->
 
-<body>
-	<!-- navigation -->
-	<div class="navigation">
-		<nav class="nav has-shadow">
-			<div class="container">
-				<!-- nav site title -->
-				<div class="nav-left">
-					<a class="nav-item">
-						<h3 class="title is-3" style="color: white;">ERIC PAUL DEVELOPER</h3>
-					</a>
-				</div>
-				<!-- end of site title -->
+          <!-- this "nav-toggle" hamburger menu is only visible on mobile -->
+          <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <!-- end of toggle -->
 
-				<!-- this "nav-toggle" hamburger menu is only visible on mobile -->
-				<span class="nav-toggle">
-					<span></span>
-					<span></span>
-					<span></span>
-				</span>
-				<!-- end of toggle -->
+          <!-- this "nav-menu" is hidden on mobile -->
+          <div class="nav-right nav-menu">
+            <a class="nav-item is-tab" href="index.html">
+              Home
+            </a>
+            <a class="nav-item is-tab" href="post.html">
+              Blog
+            </a>
+            <a class="nav-item is-tab" href="about.html">
+              About
+            </a>
+            <a class="nav-item is-tab is-active" href="contact.html">
+              Contact
+            </a>
+            <a class="nav-item" href="https://github.com/epaulf">
+              <span class="icon">
+                <i class="fa fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <!-- end of nav -->
+        </div>
+      </nav>
+    </div>
+    <!-- end navigation -->
 
-				<!-- this "nav-menu" is hidden on mobile -->
-				<div class="nav-right nav-menu">
-					<a class="nav-item is-tab" href="index.html">
-						Home
-					</a>
-					<a class="nav-item is-tab" href="post.html">
-						Blog
-					</a>
-					<a class="nav-item is-tab" href="about.html">
-						About
-					</a>
-					<a class="nav-item is-tab is-active" href="contact.html">
-						Contact
-					</a>
-					<a class="nav-item" href="https://github.com/epaulf">
-						<span class="icon">
-							<i class="fa fa-github"></i>
-						</span>
-					</a>
-				</div>
-				<!-- end of nav -->
-			</div>
-		</nav>
-	</div>
-	<!-- end navigation -->
+    <!-- page content -->
+    <div class="main-content">
+      <div class="container">
+        <!-- start of contact -->
+        <div class="columns is-multiline is-centered">
+          <!-- start of contact -->
+          <div class="column is-7">
+            <div class="card">
+              <!-- contact header -->
+              <div class="card-content-header has-text-centered">
+                <h4 class="title is-4">Contact</h4>
+              </div>
+              <!-- end of contact header -->
 
-	<!-- page content -->
-	<div class="main-content">
-		<div class="container">
-			<!-- start of contact -->
-			<div class="columns is-multiline is-centered">
-				<!-- start of contact -->
-				<div class="column is-7">
-					<div class="card">
-						<!-- contact header -->
-						<div class="card-content-header has-text-centered">
-							<h4 class="title is-4">Contact</h4>
-						</div>
-						<!-- end of contact header -->
+              <!-- contact content -->
+              <div class="card-content">
+                <div class="content">
+                  <div class="card-inner-wrapper">
+                    <div class="card-content-text">
+                      <!-- contact text -->
+                      <p>
+                        You can contact me for any questions or business through
+                        my social networks or directly to my personal email.
+                      </p>
+                      <!-- end contact text -->
 
-						<!-- contact content -->
-						<div class="card-content">
-							<div class="content">
-								<div class="card-inner-wrapper">
-									<div class="card-content-text">
-										<!-- contact text -->
-										<p>You can contact me for any questions or business through my social networks or directly to my personal email.</p>
-										<!-- end contact text -->
+                      <!-- form begin -->
+                      <div class="card-content-form">
+                        <form
+                          method="POST"
+                          action="mailto:ericpaulflorese@gmail.com?subject=Paulweb contact"
+                          enctype="text/plain"
+                        >
+                          <div class="field">
+                            <label class="label">Name</label>
+                            <p class="control">
+                              <input
+                                class="input is-large"
+                                name="Name"
+                                id="nameid"
+                                type="text"
+                                placeholder="Name"
+                                required
+                              />
+                            </p>
+                          </div>
+                          <div class="field">
+                            <label class="label">Email</label>
+                            <p class="control">
+                              <input
+                                class="input is-large"
+                                name="email_address"
+                                id="emailid"
+                                type="email"
+                                placeholder="Email"
+                                value=""
+                                required
+                              />
+                            </p>
+                          </div>
+                          <div class="field">
+                            <label class="label">Message</label>
+                            <p class="control">
+                              <textarea
+                                class="textarea is-large"
+                                name="comments"
+                                id="messid"
+                                placeholder="Message"
+                                required
+                              ></textarea>
+                            </p>
+                          </div>
+                          <div class="field is-grouped">
+                            <p class="control">
+                              <button
+                                class="button  is-medium is-button-grey"
+                                type="submit"
+                              >
+                                Send
+                              </button>
+                            </p>
+                            <p class="control">
+                              <button
+                                class="button  is-medium is-button-grey"
+                                type="reset"
+                              >
+                                Clear
+                              </button>
+                            </p>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- form end -->
+                    </div>
 
-										<!-- form begin -->
-										<div class="card-content-form">
-											<form method="POST" action="mailto:ericpaulflorese@gmail.com?subject=Paulweb contact" enctype="text/plain">
-												<div class="field">
-													<label class="label">Name</label>
-													<p class="control">
-														<input class="input is-large" name="Name" id="nameid" type="text" placeholder="Name" required>
-													</p>
-												</div>
-												<div class="field">
-													<label class="label">Email</label>
-													<p class="control">
-														<input class="input is-large" name="email_address" id="emailid" type="email" placeholder="Email" value="" required>
-													</p>
-												</div>
-												<div class="field">
-													<label class="label">Message</label>
-													<p class="control">
-														<textarea class="textarea is-large" name="comments" id="messid" placeholder="Message" required></textarea>
-													</p>
-												</div>
-												<div class="field is-grouped">
-													<p class="control">
-														<button class="button  is-medium is-button-grey" type="submit">Send</button>
-													</p>
-													<p class="control">
-														<button class="button  is-medium is-button-grey" type="reset">Clear</button>
-													</p>
-												</div>
-											</form>
-										</div>
-										<!-- form end -->
-									</div>
+                    <!-- contact footer -->
+                    <div class="card-content-footer-small">
+                      <div class="nav-center">
+                        <a class="nav-item" href="https://github.com/epaulf">
+                          <span class="icon">
+                            <i class="fa fa-github"></i>
+                          </span>
+                        </a>
+                        <a class="nav-item" href="https://twitter.com/Epauldev">
+                          <span class="icon">
+                            <i class="fa fa-twitter"></i>
+                          </span>
+                        </a>
+                        <a
+                          class="nav-item"
+                          href="https://www.linkedin.com/in/eric-paul-flores-espinoza-624603143/"
+                        >
+                          <span class="icon">
+                            <i class="fa fa-linkedin"></i>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end of contact footer -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of contact column -->
+        </div>
+        <!-- end of contact columns -->
+      </div>
+    </div>
+    <!-- end of page content -->
 
-									<!-- contact footer -->
-									<div class="card-content-footer-small">
-										<div class="nav-center">
-											<a class="nav-item" href="https://github.com/epaulf">
-												<span class="icon">
-													<i class="fa fa-github"></i>
-												</span>
-											</a>
-											<a class="nav-item" href="https://twitter.com/Epauldev">
-												<span class="icon">
-													<i class="fa fa-twitter"></i>
-												</span>
-											</a>
-											<a class="nav-item" href="https://www.linkedin.com/in/eric-paul-flores-espinoza-624603143/">
-												<span class="icon">
-													<i class="fa fa-linkedin"></i>
-												</span>
-											</a>
-										</div>
-									</div>
-									<!-- end of contact footer -->
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end of contact column -->
-			</div>
-			<!-- end of contact columns -->
-
-		</div>
-	</div>
-	<!-- end of page content -->
-
-	<!-- footer: will stick to the bottom -->
-	<div class="footer footer-top-shadow">
-		<div class="container has-text-centered">
-			<span class="icon">
-				<i class="fa fa-github"></i>
-			</span>
-		</div>
-	</div>
-	<!-- end of footer -->
-	<script>
-/*		function Enviar() {
+    <!-- footer: will stick to the bottom -->
+    <div class="footer footer-top-shadow">
+      <div class="container has-text-centered">
+        <span class="icon">
+          <i class="fa fa-github"></i>
+        </span>
+      </div>
+    </div>
+    <!-- end of footer -->
+    <script>
+      /*		function Enviar() {
 
 			var name = document.getElementById("nameid");
 			var email = document.getElementById("emailid");
@@ -171,7 +218,6 @@
 
 		}
 */
-	</script>
-</body>
-
+    </script>
+  </body>
 </html>
