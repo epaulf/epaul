@@ -238,3 +238,9 @@ a.nav-item:hover {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
+.tag.is-primary {
+
+    background-color: #209ce4;
+    color: #fff;
+
+}
