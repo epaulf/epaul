@@ -238,16 +238,23 @@ a.nav-item:hover {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
+
 .tag.is-primary {
 
     background-color: #209ce4;
     color: #fff;
 
 }
+
 .box {
 
     background-color: #363636;
 }
+
+.box:hover {
+    box-shadow: 0 0 8px rgb(247, 244, 244);
+}
+
 li {
     color: white;
 }
